@@ -1,7 +1,7 @@
 'use strict';
 const webpack = require('webpack');
 const path = require('path');
-
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     mode: 'development',
     // entry: './src/index.js',
@@ -52,7 +52,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new CleanWebpackPlugin()
     ],
     devServer: {
         contentBase: './dist',
