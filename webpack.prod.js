@@ -5,14 +5,51 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const glob = require('glob');
+
+const setMPA = () => {
+    const entry = {};
+    const htmlWebpackPlugins = [];
+
+    const entryFiles = glob.sync(path.join(__dirname, './src/*/index.js'));
+
+    console.log(entryFiles);
+    Object.keys(entryFiles).map((index) => {
+        const entryFile = entryFiles[index];
+        const match = entryFile.match(/src\/(.*)\/index\.js/);
+        const pageName = match && match[1];
+        entry[pageName] = entryFile;
+
+        htmlWebpackPlugins.push(
+            new HtmlWebpackPlugin({
+                template: path.join(__dirname, `src/${pageName}/index.html`),
+                filename: `${pageName}.html`,
+                chunks: [pageName],
+                inject: true,
+                minify: {
+                  html5: true,
+                  collapseWhitespace: true,
+                  preserveLineBreaks: false,
+                  minifyCSS: true,
+                  minifyJS: true,
+                  removeComments: false
+                }
+              })
+        )
+    })
+
+    return {
+        entry,
+        htmlWebpackPlugins
+    }
+}
+
+const {entry, htmlWebpackPlugins} = setMPA();
 
 module.exports = {
     mode: 'production',
     // entry: './src/index.js',
-    entry: {
-        index: './src/index.js',
-        search: './src/search.js'
-    },
+    entry: entry,
     output: {
         path: path.resolve(__dirname, 'dist'),
         // filename: 'bundle.js'
@@ -38,7 +75,24 @@ module.exports = {
                     // 'style-loader',
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'less-loader'
+                    'less-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: () => [
+                                require('autoprefixer')({
+                                    browsers: ['last 2 version', '>1%', 'ios 7']
+                                })
+                            ]
+                        }
+                    },
+                    {
+                        loader: 'px2rem-loader',
+                        options: {
+                            remUnit: 75,
+                            remPrecision: 8
+                        }
+                    }
                 ]
             },
             {
@@ -70,38 +124,10 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name]_[contenthash:8].css'
         }),
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'src/index.html'),
-            filename: 'index.html',
-            chunks: ['index'],
-            inject: true,
-            minify: {
-              html5: true,
-              collapseWhitespace: true,
-              preserveLineBreaks: false,
-              minifyCSS: true,
-              minifyJS: true,
-              removeComments: false
-            }
-          }),
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'src/search.html'),
-            filename: 'search.html',
-            chunks: ['search'],
-            inject: true,
-            minify: {
-              html5: true,
-              collapseWhitespace: true,
-              preserveLineBreaks: false,
-              minifyCSS: true,
-              minifyJS: true,
-              removeComments: false
-            }
-          }),
           new OptimizeCSSAssetsPlugin({
             assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano')
           }),
           new CleanWebpackPlugin()
-    ]
+    ].concat(htmlWebpackPlugins)
 }
