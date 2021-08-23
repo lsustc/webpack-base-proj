@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 const glob = require('glob');
 
 const setMPA = () => {
@@ -13,7 +14,6 @@ const setMPA = () => {
 
     const entryFiles = glob.sync(path.join(__dirname, './src/*/index.js'));
 
-    console.log(entryFiles);
     Object.keys(entryFiles).map((index) => {
         const entryFile = entryFiles[index];
         const match = entryFile.match(/src\/(.*)\/index\.js/);
@@ -24,7 +24,7 @@ const setMPA = () => {
             new HtmlWebpackPlugin({
                 template: path.join(__dirname, `src/${pageName}/index.html`),
                 filename: `${pageName}.html`,
-                chunks: [pageName],
+                chunks: [pageName, 'vendors'],
                 inject: true,
                 minify: {
                   html5: true,
@@ -128,6 +128,35 @@ module.exports = {
             assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano')
           }),
-          new CleanWebpackPlugin()
-    ].concat(htmlWebpackPlugins)
+          new CleanWebpackPlugin(),
+        //   new HtmlWebpackExternalsPlugin({
+        //       externals: [
+        //           {
+        //               module: 'react',
+        //               entry: 'https://11.url.cn/now/lib/16.2.0/react.min.js',
+        //               global: 'React',
+        //           },
+        //           {
+        //             module: 'react-dom',
+        //             entry: 'https://11.url.cn/now/lib/16.2.0/react-dom.min.js',
+        //             global: 'ReactDOM',
+        //         }
+        //       ]
+        //   }),
+    ].concat(htmlWebpackPlugins),
+    optimization: {
+        splitChunks: {
+            minSize: 0,
+            cacheGroups: {
+                commons: {
+                    // test: /(react|react-dom)/,
+                    // name: 'vendors',
+                    name: 'commons',
+                    chunks: 'all',
+                    minChunks: 3
+                }
+            }
+        }
+    }
+    // devtool: 'inline-source-map'
 }
