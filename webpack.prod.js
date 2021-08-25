@@ -47,7 +47,7 @@ const setMPA = () => {
 const {entry, htmlWebpackPlugins} = setMPA();
 
 module.exports = {
-    mode: 'production',
+    mode: 'none',
     // entry: './src/index.js',
     entry: entry,
     output: {
@@ -143,6 +143,7 @@ module.exports = {
         //         }
         //       ]
         //   }),
+        new webpack.optimize.ModuleConcatenationPlugin()
     ].concat(htmlWebpackPlugins),
     optimization: {
         splitChunks: {
