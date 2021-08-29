@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const glob = require('glob');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 const setMPA = () => {
     const entry = {};
@@ -26,14 +27,14 @@ const setMPA = () => {
                 chunks: [pageName],
                 inject: true,
                 minify: {
-                  html5: true,
-                  collapseWhitespace: true,
-                  preserveLineBreaks: false,
-                  minifyCSS: true,
-                  minifyJS: true,
-                  removeComments: false
+                    html5: true,
+                    collapseWhitespace: true,
+                    preserveLineBreaks: false,
+                    minifyCSS: true,
+                    minifyJS: true,
+                    removeComments: false
                 }
-              })
+            })
         )
     })
 
@@ -43,7 +44,7 @@ const setMPA = () => {
     }
 }
 
-const {entry, htmlWebpackPlugins} = setMPA();
+const { entry, htmlWebpackPlugins } = setMPA();
 
 module.exports = {
     mode: 'development',
@@ -81,7 +82,7 @@ module.exports = {
                 use: [{
                     loader: 'url-loader',
                     options: {
-                      limit: 10240
+                        limit: 10240
                     }
                 }]
             },
@@ -93,11 +94,13 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new FriendlyErrorsWebpackPlugin()
     ].concat(htmlWebpackPlugins),
     devServer: {
         contentBase: './dist',
-        hot: true
+        hot: true,
+        stats: 'errors-only'
     },
     devtool: 'cheap-source-map'
 }

@@ -1,10 +1,16 @@
 'use strict'
-import React from "react";
-import ReactDOM from "react-dom";
-import './search.less';
-import logo from './images/logo.png';
-// import '../../common/index';
-import { a } from './tree-shaking';
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import './search.less';
+// import logo from './images/logo.png';
+// // import '../../common/index';
+// import { a } from './tree-shaking';
+
+const React = require('react');
+require('./search.less');
+const logo = require('./images/logo.png');
+const a = require('./tree-shaking');
+
 
 if (false) {
     a();
@@ -39,7 +45,4 @@ class Search extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <Search />,
-    document.getElementById('root')
-)
+module.exports = <Search />;
