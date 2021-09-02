@@ -6,11 +6,12 @@ const path = require('path');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const AutoPrefixer = require('autoprefixer');
 
+const projectRoot = process.cwd();
 const setMPA = () => {
   const entry = {};
   const htmlWebpackPlugins = [];
 
-  const entryFiles = glob.sync(path.join(__dirname, './src/*/index.js'));
+  const entryFiles = glob.sync(path.join(projectRoot, './src/*/index.js'));
 
   Object.keys(entryFiles).forEach((index) => {
     const entryFile = entryFiles[index];
@@ -20,7 +21,7 @@ const setMPA = () => {
 
     htmlWebpackPlugins.push(
       new HtmlWebpackPlugin({
-        template: path.join(__dirname, `src/${pageName}/index.html`),
+        template: path.join(projectRoot, `src/${pageName}/index.html`),
         filename: `${pageName}.html`,
         chunks: [pageName, 'vendors'],
         inject: true,
@@ -43,7 +44,7 @@ const setMPA = () => {
 };
 
 const { entry, htmlWebpackPlugins } = setMPA();
-
+console.log(projectRoot);
 module.exports = {
   entry,
   module: {
