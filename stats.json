@@ -1,0 +1,631 @@
+ DONE  Compiled successfully in 82442ms上午8:36:37
+
+{
+  "errors": [],
+  "warnings": [],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\index\\index.js",
+      "name": "./src/index/index.js",
+      "index": 0,
+      "index2": 2,
+      "size": 101,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 1,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\index\\helloworld.js",
+      "name": "./src/index/helloworld.js",
+      "index": 1,
+      "index2": 0,
+      "size": 58,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\index\\index.js",
+      "issuerId": 0,
+      "issuerName": "./src/index/index.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\index\\index.js",
+          "name": "./src/index/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 2,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\common\\index.js",
+      "name": "./common/index.js",
+      "index": 2,
+      "index2": 1,
+      "size": 54,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\index\\index.js",
+      "issuerId": 0,
+      "issuerName": "./src/index/index.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\index\\index.js",
+          "name": "./src/index/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 3,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+      "name": "./src/search/index.js",
+      "index": 3,
+      "index2": 18,
+      "size": 4414,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 4,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\index.js",
+      "name": "./node_modules/_react@16.14.0@react/index.js",
+      "index": 4,
+      "index2": 7,
+      "size": 189,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+      "issuerId": 3,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 5,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\cjs\\react.development.js",
+      "name": "./node_modules/_react@16.14.0@react/cjs/react.development.js",
+      "index": 5,
+      "index2": 6,
+      "size": 66869,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\index.js",
+      "issuerId": 4,
+      "issuerName": "./node_modules/_react@16.14.0@react/index.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 4,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\index.js",
+          "name": "./node_modules/_react@16.14.0@react/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 6,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_object-assign@4.1.1@object-assign\\index.js",
+      "name": "./node_modules/_object-assign@4.1.1@object-assign/index.js",
+      "index": 6,
+      "index2": 3,
+      "size": 2226,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\cjs\\react.development.js",
+      "issuerId": 5,
+      "issuerName": "./node_modules/_react@16.14.0@react/cjs/react.development.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 4,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\index.js",
+          "name": "./node_modules/_react@16.14.0@react/index.js"
+        },
+        {
+          "id": 5,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\cjs\\react.development.js",
+          "name": "./node_modules/_react@16.14.0@react/cjs/react.development.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 7,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_prop-types@15.7.2@prop-types\\checkPropTypes.js",
+      "name": "./node_modules/_prop-types@15.7.2@prop-types/checkPropTypes.js",
+      "index": 7,
+      "index2": 5,
+      "size": 3632,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\cjs\\react.development.js",
+      "issuerId": 5,
+      "issuerName": "./node_modules/_react@16.14.0@react/cjs/react.development.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 4,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\index.js",
+          "name": "./node_modules/_react@16.14.0@react/index.js"
+        },
+        {
+          "id": 5,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\cjs\\react.development.js",
+          "name": "./node_modules/_react@16.14.0@react/cjs/react.development.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 8,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_prop-types@15.7.2@prop-types\\lib\\ReactPropTypesSecret.js",
+      "name": "./node_modules/_prop-types@15.7.2@prop-types/lib/ReactPropTypesSecret.js",
+      "index": 8,
+      "index2": 4,
+      "size": 311,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_prop-types@15.7.2@prop-types\\checkPropTypes.js",
+      "issuerId": 7,
+      "issuerName": "./node_modules/_prop-types@15.7.2@prop-types/checkPropTypes.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 4,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\index.js",
+          "name": "./node_modules/_react@16.14.0@react/index.js"
+        },
+        {
+          "id": 5,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react@16.14.0@react\\cjs\\react.development.js",
+          "name": "./node_modules/_react@16.14.0@react/cjs/react.development.js"
+        },
+        {
+          "id": 7,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_prop-types@15.7.2@prop-types\\checkPropTypes.js",
+          "name": "./node_modules/_prop-types@15.7.2@prop-types/checkPropTypes.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 9,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\index.js",
+      "name": "./node_modules/_react-dom@16.14.0@react-dom/index.js",
+      "index": 9,
+      "index2": 13,
+      "size": 1352,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+      "issuerId": 3,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 10,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\cjs\\react-dom.development.js",
+      "name": "./node_modules/_react-dom@16.14.0@react-dom/cjs/react-dom.development.js",
+      "index": 10,
+      "index2": 12,
+      "size": 721126,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\index.js",
+      "issuerId": 9,
+      "issuerName": "./node_modules/_react-dom@16.14.0@react-dom/index.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 9,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\index.js",
+          "name": "./node_modules/_react-dom@16.14.0@react-dom/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 11,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_scheduler@0.19.1@scheduler\\index.js",
+      "name": "./node_modules/_scheduler@0.19.1@scheduler/index.js",
+      "index": 11,
+      "index2": 9,
+      "size": 197,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\cjs\\react-dom.development.js",
+      "issuerId": 10,
+      "issuerName": "./node_modules/_react-dom@16.14.0@react-dom/cjs/react-dom.development.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 9,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\index.js",
+          "name": "./node_modules/_react-dom@16.14.0@react-dom/index.js"
+        },
+        {
+          "id": 10,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\cjs\\react-dom.development.js",
+          "name": "./node_modules/_react-dom@16.14.0@react-dom/cjs/react-dom.development.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 12,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_scheduler@0.19.1@scheduler\\cjs\\scheduler.development.js",
+      "name": "./node_modules/_scheduler@0.19.1@scheduler/cjs/scheduler.development.js",
+      "index": 12,
+      "index2": 8,
+      "size": 26532,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_scheduler@0.19.1@scheduler\\index.js",
+      "issuerId": 11,
+      "issuerName": "./node_modules/_scheduler@0.19.1@scheduler/index.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 9,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\index.js",
+          "name": "./node_modules/_react-dom@16.14.0@react-dom/index.js"
+        },
+        {
+          "id": 10,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\cjs\\react-dom.development.js",
+          "name": "./node_modules/_react-dom@16.14.0@react-dom/cjs/react-dom.development.js"
+        },
+        {
+          "id": 11,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_scheduler@0.19.1@scheduler\\index.js",
+          "name": "./node_modules/_scheduler@0.19.1@scheduler/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 13,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_scheduler@0.19.1@scheduler\\tracing.js",
+      "name": "./node_modules/_scheduler@0.19.1@scheduler/tracing.js",
+      "index": 13,
+      "index2": 11,
+      "size": 213,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\cjs\\react-dom.development.js",
+      "issuerId": 10,
+      "issuerName": "./node_modules/_react-dom@16.14.0@react-dom/cjs/react-dom.development.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 9,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\index.js",
+          "name": "./node_modules/_react-dom@16.14.0@react-dom/index.js"
+        },
+        {
+          "id": 10,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\cjs\\react-dom.development.js",
+          "name": "./node_modules/_react-dom@16.14.0@react-dom/cjs/react-dom.development.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 14,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_scheduler@0.19.1@scheduler\\cjs\\scheduler-tracing.development.js",
+      "name": "./node_modules/_scheduler@0.19.1@scheduler/cjs/scheduler-tracing.development.js",
+      "index": 14,
+      "index2": 10,
+      "size": 10145,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_scheduler@0.19.1@scheduler\\tracing.js",
+      "issuerId": 13,
+      "issuerName": "./node_modules/_scheduler@0.19.1@scheduler/tracing.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 9,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\index.js",
+          "name": "./node_modules/_react-dom@16.14.0@react-dom/index.js"
+        },
+        {
+          "id": 10,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_react-dom@16.14.0@react-dom\\cjs\\react-dom.development.js",
+          "name": "./node_modules/_react-dom@16.14.0@react-dom/cjs/react-dom.development.js"
+        },
+        {
+          "id": 13,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_scheduler@0.19.1@scheduler\\tracing.js",
+          "name": "./node_modules/_scheduler@0.19.1@scheduler/tracing.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 15,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_mini-css-extract-plugin@0.6.0@mini-css-extract-plugin\\dist\\loader.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_css-loader@2.1.1@css-loader\\dist\\cjs.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_less-loader@5.0.0@less-loader\\dist\\cjs.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_postcss-loader@3.0.0@postcss-loader\\src\\index.js??ref--6-3!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_px2rem-loader@0.1.9@px2rem-loader\\index.js??ref--6-4!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\search.less",
+      "name": "./src/search/search.less",
+      "index": 15,
+      "index2": 15,
+      "size": 39,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+      "issuerId": 3,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 16,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_file-loader@3.0.1@file-loader\\dist\\cjs.js??ref--7-0!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\images\\logo.png",
+      "name": "./src/search/images/logo.png",
+      "index": 17,
+      "index2": 16,
+      "size": 63,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+      "issuerId": 3,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 17,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\tree-shaking.js",
+      "name": "./src/search/tree-shaking.js",
+      "index": 18,
+      "index2": 17,
+      "size": 101,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+      "issuerId": 3,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 18,
+      "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\dynamic.js",
+      "name": "./src/search/dynamic.js",
+      "index": 19,
+      "index2": 19,
+      "size": 139,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+      "issuerId": 3,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": 3,
+          "identifier": "F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_babel-loader@8.2.2@babel-loader\\lib\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\node_modules\\_eslint-loader@2.1.2@eslint-loader\\index.js!F:\\2021-plan\\学习\\webpack学习\\webpack-base-proj\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "filteredModules": 1,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  }
+}
