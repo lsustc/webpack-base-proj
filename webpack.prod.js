@@ -9,6 +9,8 @@ const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 const glob = require('glob');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const Happypack = require('happypack');
 
 const smp = new SpeedMeasureWebpackPlugin();
 
@@ -64,8 +66,15 @@ module.exports = smp.wrap({
             {
                 test: /.js$/,
                 use: [
+                    {
+                        loader: 'thread-loader',
+                        options: {
+                            workers: 3
+                        }
+                    },
                     'babel-loader',
-                    'eslint-loader'
+                    // 'happypack/loader'
+                    // 'eslint-loader'
                 ]
             },
             {
@@ -136,20 +145,20 @@ module.exports = smp.wrap({
             cssProcessor: require('cssnano')
         }),
         new CleanWebpackPlugin(),
-        //   new HtmlWebpackExternalsPlugin({
-        //       externals: [
-        //           {
-        //               module: 'react',
-        //               entry: 'https://11.url.cn/now/lib/16.2.0/react.min.js',
-        //               global: 'React',
-        //           },
-        //           {
-        //             module: 'react-dom',
-        //             entry: 'https://11.url.cn/now/lib/16.2.0/react-dom.min.js',
-        //             global: 'ReactDOM',
-        //         }
-        //       ]
-        //   }),
+        new HtmlWebpackExternalsPlugin({
+            externals: [
+                {
+                    module: 'react',
+                    entry: 'https://11.url.cn/now/lib/16.2.0/react.min.js',
+                    global: 'React',
+                },
+                {
+                    module: 'react-dom',
+                    entry: 'https://11.url.cn/now/lib/16.2.0/react-dom.min.js',
+                    global: 'ReactDOM',
+                }
+            ]
+        }),
         // new webpack.optimize.ModuleConcatenationPlugin(),
         new FriendlyErrorsWebpackPlugin(),
         function () {
@@ -160,7 +169,11 @@ module.exports = smp.wrap({
                     process.exit(1);
                 }
             })
-        }
+        },
+        // new BundleAnalyzerPlugin(),
+        // new Happypack({
+        //     loaders: ['babel-loader']
+        // })
     ].concat(htmlWebpackPlugins),
     optimization: {
         splitChunks: {

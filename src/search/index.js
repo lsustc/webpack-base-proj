@@ -5,6 +5,7 @@ import './search.less';
 import logo from './images/logo.png';
 // import '../../common/index';
 import { a } from './tree-shaking';
+// import 'babel-polyfill';
 
 if (false) {
     a();
