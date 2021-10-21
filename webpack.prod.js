@@ -11,6 +11,7 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const Happypack = require('happypack');
+const TerserPlugin = require('terser-webpack-plugin');
 
 const smp = new SpeedMeasureWebpackPlugin();
 
@@ -145,20 +146,20 @@ module.exports = smp.wrap({
             cssProcessor: require('cssnano')
         }),
         new CleanWebpackPlugin(),
-        new HtmlWebpackExternalsPlugin({
-            externals: [
-                {
-                    module: 'react',
-                    entry: 'https://11.url.cn/now/lib/16.2.0/react.min.js',
-                    global: 'React',
-                },
-                {
-                    module: 'react-dom',
-                    entry: 'https://11.url.cn/now/lib/16.2.0/react-dom.min.js',
-                    global: 'ReactDOM',
-                }
-            ]
-        }),
+        // new HtmlWebpackExternalsPlugin({
+        //     externals: [
+        //         {
+        //             module: 'react',
+        //             entry: 'https://11.url.cn/now/lib/16.2.0/react.min.js',
+        //             global: 'React',
+        //         },
+        //         {
+        //             module: 'react-dom',
+        //             entry: 'https://11.url.cn/now/lib/16.2.0/react-dom.min.js',
+        //             global: 'ReactDOM',
+        //         }
+        //     ]
+        // }),
         // new webpack.optimize.ModuleConcatenationPlugin(),
         new FriendlyErrorsWebpackPlugin(),
         function () {
@@ -173,9 +174,17 @@ module.exports = smp.wrap({
         // new BundleAnalyzerPlugin(),
         // new Happypack({
         //     loaders: ['babel-loader']
-        // })
+        // }),
+        new webpack.DllReferencePlugin({
+            manifest: require('./build/library/library.json')
+        })
     ].concat(htmlWebpackPlugins),
     optimization: {
+        minimizer: [
+            new TerserPlugin({
+                parallel: true
+            })
+        ],
         splitChunks: {
             minSize: 0,
             cacheGroups: {
