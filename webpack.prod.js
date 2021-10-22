@@ -12,7 +12,7 @@ const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const Happypack = require('happypack');
 const TerserPlugin = require('terser-webpack-plugin');
-
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const smp = new SpeedMeasureWebpackPlugin();
 
 const setMPA = () => {
@@ -66,6 +66,7 @@ module.exports = smp.wrap({
         rules: [
             {
                 test: /.js$/,
+                include: path.resolve('src'),
                 use: [
                     {
                         loader: 'thread-loader',
@@ -73,7 +74,7 @@ module.exports = smp.wrap({
                             workers: 3
                         }
                     },
-                    'babel-loader',
+                    'babel-loader?cacheDirectory=true',
                     // 'happypack/loader'
                     // 'eslint-loader'
                 ]
@@ -175,14 +176,16 @@ module.exports = smp.wrap({
         // new Happypack({
         //     loaders: ['babel-loader']
         // }),
-        new webpack.DllReferencePlugin({
-            manifest: require('./build/library/library.json')
-        })
+        // new webpack.DllReferencePlugin({
+        //     manifest: require('./build/library/library.json')
+        // }),
+        new HardSourceWebpackPlugin()
     ].concat(htmlWebpackPlugins),
     optimization: {
         minimizer: [
             new TerserPlugin({
-                parallel: true
+                parallel: true,
+                cache: true
             })
         ],
         splitChunks: {
@@ -197,6 +200,14 @@ module.exports = smp.wrap({
                 }
             }
         }
+    },
+    resolve: {
+        alias: {
+            'react': path.resolve(__dirname, './node_modules/react/umd/react.production.min.js'),
+            'react-dom': path.resolve(__dirname, './node_modules/react-dom/umd/react-dom.production.min.js')
+        },
+        extensions: ['.js'],
+        mainFields: ['main']
     },
     // devtool: 'inline-source-map',
     stats: "errors-only"
