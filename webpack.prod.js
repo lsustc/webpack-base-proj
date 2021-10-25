@@ -14,6 +14,11 @@ const Happypack = require('happypack');
 const TerserPlugin = require('terser-webpack-plugin');
 const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const smp = new SpeedMeasureWebpackPlugin();
+const PurgecssPlugin = require('purgecss-webpack-plugin');
+
+const PATHS = {
+    src: path.join(__dirname, 'src')
+}
 
 const setMPA = () => {
     const entry = {};
@@ -123,6 +128,28 @@ module.exports = smp.wrap({
                         //   limit: 10240
                         name: '[name]_[hash:8].[ext]'
                     }
+                }, {
+                    loader: 'image-webpack-loader',
+                    options: {
+                        mozjpeg: {
+                            progressive: true,
+                        },
+                        // optipng.enabled: false will disable optipng
+                        optipng: {
+                            enabled: false,
+                        },
+                        pngquant: {
+                            quality: '65-90',
+                            speed: 4
+                        },
+                        gifsicle: {
+                            interlaced: false,
+                        },
+                        // the webp option will enable WEBP
+                        webp: {
+                            quality: 75
+                        }
+                    }
                 }]
             },
             {
@@ -179,7 +206,10 @@ module.exports = smp.wrap({
         // new webpack.DllReferencePlugin({
         //     manifest: require('./build/library/library.json')
         // }),
-        new HardSourceWebpackPlugin()
+        new HardSourceWebpackPlugin(),
+        new PurgecssPlugin({
+            paths: glob.sync(`${PATHS.src}/**/*`, {nodir: true})
+        }),
     ].concat(htmlWebpackPlugins),
     optimization: {
         minimizer: [

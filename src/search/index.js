@@ -6,7 +6,7 @@ import logo from './images/logo.png';
 // import '../../common/index';
 import { a } from './tree-shaking';
 // import 'babel-polyfill';
-
+import bg from './images/bg.jpg';
 if (false) {
     a();
 }
@@ -35,6 +35,7 @@ class Search extends React.Component {
             {
                 Text ? <Text /> : null
             }
+            <img src={bg}/>
             搜索文字哈哈 <img src={logo} onClick={this.loadComponent.bind(this)} />
         </div>;
     }
